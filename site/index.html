@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+
+        <title>Public Information Dashboard</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css" integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
+       
+        <link rel = "stylesheet" href="css/styles.css">
+
+    </head>
+
+    <body>
+
+        <h1>Perceived Reliability Dashboard</h1>
+
+        <div id = "maps-container">
+
+               
+            <div id="panel">
+                
+                <h3>On-Time Performance (Delay)</h3>
+
+                <h4>Bus Priority</h4>
+                <h4>In Boston</h4>
+                <h4>Line</h4>
+
+                <input type = "checkbox" id = "bpt1" name = "bpt" class = "bpt" value="1"> <label for="bpt">Show Bus Priority Only</label>
+                <input type = "checkbox" id = "bpt0" name = "bpt" class = "bpt" value="0"> <label for="bpt">Show non-Bus Priority Only</label>
+                <input type = "checkbox" id = "bpt2" name = "bpt" class = "bpt" value="2"> <label for="bpt">Show BP and non-BP</label>
+
+                <input type = "checkbox" id = "inb" name = "inb" class = "inb" value="1"> <label for="inb">Toggle in Boston</label>
+
+                <input type = "checkbox" id = "comp" name = "comp" class = "comp" value="1"> <label for="comp">Toggle Comparison Mode</label>
+
+                <input type="text" name="talk" id="talk"><label for="talk">Talk Here...</label>
+                <button id = "save-button" class = "save-button"><label for="save-button"></label for = "save-button">SAVE</button>
+        
+            </div>
+
+            <div id = "basemap"></div>
+
+            <div id="compare-map"></div>
+
+            </div>
+
+        
+
+        
+        <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js" integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
+
+
+        <script type = "module" src = "js/main.js"></script>
+
+    </body>
+
+</html>
+
+
